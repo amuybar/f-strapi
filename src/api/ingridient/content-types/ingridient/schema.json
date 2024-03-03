@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ingridients",
+  "info": {
+    "singularName": "ingridient",
+    "pluralName": "ingridients",
+    "displayName": "Ingridient"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tittle": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "content": {
+      "type": "text"
+    },
+    "menu_item": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu-item.menu-item"
+    }
+  }
+}
